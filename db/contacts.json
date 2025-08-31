@@ -1,0 +1,53 @@
+{
+  "lastId": 7,
+  "contacts": [
+    {
+      "id": "7",
+      "name": "Syamnath S Nair",
+      "phone": "07510726715",
+      "email": "nath.syam.1986@gmail.com",
+      "notes": "I am from Thiruvananthapuram",
+      "updatedAt": 1756632560139
+    },
+    {
+      "id": "5",
+      "name": "Priya Kumar",
+      "phone": "+91 98220 00005",
+      "email": "priya@example.com",
+      "notes": "Neighbour",
+      "updatedAt": 1756632293936
+    },
+    {
+      "id": "4",
+      "name": "Arjun Singh",
+      "phone": "+91 98950 00004",
+      "email": "arjun@example.com",
+      "notes": "Vendor",
+      "updatedAt": 1756632293937
+    },
+    {
+      "id": "3",
+      "name": "Maya Nair",
+      "phone": "+91 97440 00003",
+      "email": "maya@example.com",
+      "notes": "Designer",
+      "updatedAt": 1756632293938
+    },
+    {
+      "id": "2",
+      "name": "Rahul Verma",
+      "phone": "+91 98100 00002",
+      "email": "rahul@example.com",
+      "notes": "Gym friend",
+      "updatedAt": 1756632293939
+    },
+    {
+      "id": "1",
+      "name": "Anjali Menon",
+      "phone": "+91 98470 00001",
+      "email": "anjali@example.com",
+      "notes": "Client - Kochi",
+      "updatedAt": 1756632293940
+    }
+  ]
+}

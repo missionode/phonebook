@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Help</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+<header class="border-b bg-white">
+  <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="assets/logoipsum-395.svg" class="h-9 w-auto" alt="Logo">
+      <div>
+        <h1 class="text-2xl font-semibold" data-bind="brandName">Phone Book</h1>
+        <p class="text-sm text-slate-500" data-bind="tagline">Help & FAQs</p>
+      </div>
+    </div>
+    <nav class="flex items-center gap-2">
+      <a href="index.html" class="px-3 py-2 rounded-xl text-sm hover:bg-slate-100">Contacts</a>
+      <a href="preferences.html" class="px-3 py-2 rounded-xl text-sm hover:bg-slate-100">Preferences</a>
+      <a href="help.html" class="px-3 py-2 rounded-xl text-sm bg-slate-900 text-white">Help</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-4xl mx-auto px-4 py-6">
+  <article class="prose">
+    <h2>Using the Phone Book</h2>
+    <p>This mini app lets you add, search, edit, delete, and back up contacts in your browser. Data is saved in localStorage.</p>
+    <h3>Add a contact</h3>
+    <ol>
+      <li>On the Contacts page, select Add Contact.</li>
+      <li>Fill in Name and Phone. Email and Notes are optional.</li>
+      <li>Select Save.</li>
+    </ol>
+    <h3>Search</h3>
+    <p>Type in the search box to filter by name, phone, or email. Clear resets the list.</p>
+    <h3>Edit or Delete</h3>
+    <p>Select Edit to update fields, or Delete to remove the contact.</p>
+    <h3>Backup and Restore</h3>
+    <p>Open Preferences. Use Export to download a JSON file. Use Import to choose a JSON file and merge contacts. If Auto-save Backup is enabled, a download triggers after changes.</p>
+    <h3>FAQ</h3>
+    <ul>
+      <li><strong>Where is my data stored?</strong> In your browser localStorage on this device.</li>
+      <li><strong>Will I lose data on refresh?</strong> No, localStorage persists. Clearing browser data removes it.</li>
+      <li><strong>Can I move data to another device?</strong> Export JSON on this device and Import it on the other.</li>
+    </ul>
+  </article>
+</main>
+
+<footer class="border-t bg-white mt-10">
+  <div class="max-w-4xl mx-auto px-4 py-6 text-sm text-slate-600 flex flex-col sm:flex-row gap-2 sm:items-center justify-between">
+    <div><span data-bind="brandName">Phone Book</span></div>
+    <div class="text-slate-500" data-bind="addressLine">123, Sample Street, Kerala</div>
+  </div>
+</footer>
+
+<script src="js/ui.js"></script>
+<script src="js/help.js"></script>
+</body>
+</html>

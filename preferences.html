@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Preferences</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+<header class="border-b bg-white">
+  <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="assets/logoipsum-396.svg" class="h-9 w-9" alt="Logo">
+      <div>
+        <h1 class="text-2xl font-semibold" data-bind="brandName">Phone Book</h1>
+        <p class="text-sm text-slate-500" data-bind="tagline">Preferences</p>
+      </div>
+    </div>
+    <nav class="flex items-center gap-2">
+      <a href="index.html" class="px-3 py-2 rounded-xl text-sm hover:bg-slate-100">Contacts</a>
+      <a href="preferences.html" class="px-3 py-2 rounded-xl text-sm bg-slate-900 text-white">Preferences</a>
+      <a href="help.html" class="px-3 py-2 rounded-xl text-sm hover:bg-slate-100">Help</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-4xl mx-auto px-4 py-6 space-y-6">
+  <section class="bg-white rounded-2xl border border-slate-200 p-5">
+    <h2 class="text-lg font-semibold mb-2">Backup and Restore</h2>
+    <div class="flex flex-col sm:flex-row gap-2">
+      <button id="btnExport" class="px-4 py-2 rounded-xl border border-slate-200 hover:bg-slate-100">Export Contacts (JSON)</button>
+      <label class="px-4 py-2 rounded-xl border border-slate-200 hover:bg-slate-100 cursor-pointer">
+        Import Contacts JSON
+        <input id="fileImport" type="file" accept="application/json" class="hidden">
+      </label>
+    </div>
+    <p class="text-sm text-slate-600 mt-2">Export downloads a .json file. Import merges by id; duplicates are updated.</p>
+  </section>
+
+  <section class="bg-white rounded-2xl border border-slate-200 p-5">
+    <h2 class="text-lg font-semibold mb-2">Auto-save Backup</h2>
+    <div class="flex items-center gap-3">
+      <input id="autoSave" type="checkbox" class="h-5 w-5">
+      <label for="autoSave">Enable auto-download backup when contacts change</label>
+    </div>
+    <p class="text-sm text-slate-600 mt-2">When enabled, the app auto-downloads latest backup.json after you add, edit, or delete a contact.</p>
+    <div class="mt-3">
+      <button id="btnForget" class="px-4 py-2 rounded-xl border border-slate-200 hover:bg-slate-100">Forget backup setting</button>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t bg-white mt-10">
+  <div class="max-w-4xl mx-auto px-4 py-6 text-sm text-slate-600 flex flex-col sm:flex-row gap-2 sm:items-center justify-between">
+    <div><span data-bind="brandName">Phone Book</span></div>
+    <div class="text-slate-500" data-bind="addressLine">123, Sample Street, Kerala</div>
+  </div>
+</footer>
+
+<script src="js/store.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/preferences.js"></script>
+</body>
+</html>

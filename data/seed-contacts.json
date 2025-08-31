@@ -1,0 +1,9 @@
+{
+  "contacts": [
+    { "name": "Anjali Menon", "phone": "+91 98470 00001", "email": "anjali@example.com", "notes": "Client - Kochi" },
+    { "name": "Rahul Verma", "phone": "+91 98100 00002", "email": "rahul@example.com", "notes": "Gym friend" },
+    { "name": "Maya Nair", "phone": "+91 97440 00003", "email": "maya@example.com", "notes": "Designer" },
+    { "name": "Arjun Singh", "phone": "+91 98950 00004", "email": "arjun@example.com", "notes": "Vendor" },
+    { "name": "Priya Kumar", "phone": "+91 98220 00005", "email": "priya@example.com", "notes": "Neighbour" }
+  ]
+}
